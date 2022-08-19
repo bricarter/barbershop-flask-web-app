@@ -1,1 +1,64 @@
-pass
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
+
+.hero-container {
+    background-image: linear-gradient(rgba(0,0,0,.5), black), url(images/hero-image.jpg);
+    background-position: center;
+    background-size: cover;
+
+    color: whitesmoke;
+    text-align: center;
+}
+
+    .logo {
+        grid-row: 1;
+        grid-column: 1;
+        margin: 10px;
+        text-align: left;
+    }
+
+    .hero-header {
+        grid-row: 4;
+        grid-column: 1/7;
+        font-family: 'Kaushan Script', cursive;
+        font-size: 130px;
+        margin: 0;    
+    }
+
+    .hero-subheader {
+        grid-row: 5;
+        grid-column: 1/7;
+        font-size: 20px;
+        font-style: italic;
+        
+        margin: 0 0 50px 0;
+    }
+
+    .hero-buttons {
+        grid-row: 6; 
+        grid-column: 1/7;
+    }    
+
+    .hero-btnOne {
+        font-size: 15px;
+        border: .5px solid whitesmoke;
+        
+        text-decoration: none;
+        color: whitesmoke;
+        padding: 20px 80px;
+    }
+
+        .hero-btnOne:hover {
+            background-color: whitesmoke;
+            color: black;
+        } 
