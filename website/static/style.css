@@ -11,6 +11,13 @@ body {
     grid-template-rows: repeat(8, 1fr);
 }
 
+.logo {
+    grid-row: 1;
+    grid-column: 1;
+    margin: 10px;
+    text-align: left;
+}
+
 .hero-container {
     background-image: linear-gradient(rgba(0,0,0,.5), black), url(images/hero-image.jpg);
     background-position: center;
@@ -20,19 +27,12 @@ body {
     text-align: center;
 }
 
-    .logo {
-        grid-row: 1;
-        grid-column: 1;
-        margin: 10px;
-        text-align: left;
-    }
-
     .hero-header {
         grid-row: 4;
         grid-column: 1/7;
         font-family: 'Kaushan Script', cursive;
         font-size: 130px;
-        margin: 0;    
+        margin: 0; 
     }
 
     .hero-subheader {
@@ -60,5 +60,54 @@ body {
 
         .hero-btnOne:hover {
             background-color: whitesmoke;
+            color: black;
+        } 
+
+/* BOOK APPOINTMENT */
+.book-appt-form {
+    grid-row: 3/8;  
+    grid-column: 3/5;
+
+    background-color: whitesmoke;
+    opacity: 75%;
+    border-radius: 5%;
+
+    color: black;
+}
+
+    .book-appt-form h1 {
+        margin: 40px;
+        font-size: 35px;
+    }
+
+    .form-content {
+        text-align: left;
+        margin: 35px;
+    }
+
+    .form-content label {
+        margin-right: 10px;
+    }
+
+    .form-content input {
+        width: 35vb;
+    }
+
+    .form-btn {
+        text-align: center;
+    }
+
+    .book-btn {
+        border: none; 
+        padding: 15px 22px;
+        background-color: black;
+        color: whitesmoke;
+        font-size: 15px;
+        border-radius: 5px;
+    }
+
+        .book-btn:hover {
+            background-color: whitesmoke;
+            border: 2px solid black;
             color: black;
         } 
