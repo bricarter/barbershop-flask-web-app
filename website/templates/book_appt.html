@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block title %}Book Appointment{% endblock %}
+{% block content %}
+<form method="POST" class="book-appt-form">
+    <h1>Book Appointment</h1>
+    <div class="form-content">
+        <label for="first_name">First Name:</label>
+        <input 
+        type="text"
+        id="first_name"
+        name="first_name"
+        placeholder="Enter first name">
+    </div>
+    
+    <div class="form-content">
+        <label for="last_name">Last Name:</label>
+        <input 
+        type="text"
+        id="last_name"
+        name="last_name"
+        placeholder="Enter last name">
+    </div>
+    
+    <div class="form-content">
+        <label for="appt_date">Date:</label>
+        <input 
+        type="date"
+        id="appt_date"
+        name="appt_date"
+        >  
+    </div>
+
+    <div class="form-content">
+        <label for="appt_time">Time:</label>
+        <input 
+        type="time"
+        id="appt_time"
+        name="appt_time"
+        >
+    </div>
+   
+    <div class="form-content form-btn">
+    <button type="submit" class="book-btn">Book Appointment</button>
+    </div>
+</form>
+{% endblock %}
